@@ -1,4 +1,4 @@
-# Nimbus - Drone Website
+# Nimbus - Drone Product ShowCase Website
 
 ## About the Project
 Nimbus is an innovative drone website designed for the SkillVarz 1.0 Hackathon. This website showcases cutting-edge drone technology, providing detailed insights into features, specifications, and use cases. Our goal is to deliver an immersive experience with a futuristic UI/UX and smooth animations.
