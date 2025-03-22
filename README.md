@@ -1,12 +1,51 @@
-# React + Vite
+# Nimbus - Drone Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About the Project
+Nimbus is an innovative drone website designed for the SkillVarz 1.0 Hackathon. This website showcases cutting-edge drone technology, providing detailed insights into features, specifications, and use cases. Our goal is to deliver an immersive experience with a futuristic UI/UX and smooth animations.
 
-Currently, two official plugins are available:
+## Features
+- **Dynamic Loader Animation**: GSAP-powered smooth preloader.
+- **Interactive 3D Elements**: Utilizes WebGL/Three.js for realistic drone visuals.
+- **Seamless Navigation**: Optimized routing for a smooth user experience.
+- **Responsive Design**: Fully adaptive for all devices.
+- **Engaging Animations**: Awwwards-level micro-interactions and page transitions.
+- **Informative Sections**: Covers specifications, use cases, and latest drone technologies.
+- **Contact & Inquiry Form**: Easy communication for potential customers.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- **Frontend**: React.js, Tailwind CSS
+- **Animation**: GSAP, Three.js
+- **State Management**: Redux (if needed)
+- **Backend (optional)**: Node.js, Express (for APIs if required)
 
-## Expanding the ESLint configuration
+## Setup Instructions
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-repo/nimbus.git
+   ```
+2. Navigate to the project folder:
+   ```sh
+   cd nimbus
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
+4. Run the development server:
+   ```sh
+   npm start
+   ```
+5. Open the browser and go to:
+   ```sh
+   http://localhost:3000
+   ```
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Team Members
+- **Sameer Khan** - Frontend Developer
+- **[Other Team Members]** - Roles (e.g., Backend, UI/UX, Graphics, etc.)
+
+## License
+This project is created for the SkillVarz 1.0 Hackathon and is open for educational and showcase purposes only.
+
+---
+**Note:** Further enhancements can be made post-hackathon based on user feedback and performance evaluations.
