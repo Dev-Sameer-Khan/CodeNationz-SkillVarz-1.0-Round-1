@@ -8,3 +8,7 @@
     font-family: 'ppneue';
     src: url(./assests/fonts/PPNeueMontreal-Regular.ttf);
 }
+
+*{
+    font-family: ppneue;
+}
