@@ -4,3 +4,7 @@
     font-family: 'regular';
     src: url(./assests/fonts/FontsFree-Net-Centauri.ttf);
 }
+@font-face {
+    font-family: 'ppneue';
+    src: url(./assests/fonts/PPNeueMontreal-Regular.ttf);
+}
