@@ -14,14 +14,14 @@ Nimbus is an innovative drone website designed for the SkillVarz 1.0 Hackathon. 
 
 ## Tech Stack
 - **Frontend**: React.js, Tailwind CSS
-- **Animation**: GSAP, Three.js
-- **State Management**: Redux (if needed)
-- **Backend (optional)**: Node.js, Express (for APIs if required)
+- **Animation**: GSAP, Three.js, Framer Motion, Anime.js, Lottie, ScrollTrigger, Lenis
+- **3D Graphics**: WebGL, Three.js, React Three Fiber
+- **Performance**: React Suspense, Lazy Loading
 
 ## Setup Instructions
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-repo/nimbus.git
+   git clone https://github.com/Dev-Sameer-Khan/CodeNationz-SkillVarz-1.0-Round-1.git
    ```
 2. Navigate to the project folder:
    ```sh
@@ -33,16 +33,19 @@ Nimbus is an innovative drone website designed for the SkillVarz 1.0 Hackathon. 
    ```
 4. Run the development server:
    ```sh
-   npm start
+   npm run dev
    ```
 5. Open the browser and go to:
    ```sh
-   http://localhost:3000
+   http://localhost:5173
    ```
 
 ## Team Members
-- **Sameer Khan** - Frontend Developer
-- **[Other Team Members]** - Roles (e.g., Backend, UI/UX, Graphics, etc.)
+- **[Sameer Khan](https://www.linkedin.com/in/dev-sameer-khan/)** - Frontend Developer
+- **[Pratik Rathore](https://www.linkedin.com/in/pratik-rathore-578a52236/)** - Frontend Developer
+- **[K Narayan Reddy](https://www.linkedin.com/in/k-narayan-reddy-67b6a6356/)** - Frontend Developer
+- **[Aditya](https://www.linkedin.com/in/aditya-k-2720a7251/)** - UI/UX Designer
+- **[Mumammad Muneeb](https://www.linkedin.com/in/muhammad-muneeb-a427a5321/)** - UI/UX Designer
 
 ## License
 This project is created for the SkillVarz 1.0 Hackathon and is open for educational and showcase purposes only.
