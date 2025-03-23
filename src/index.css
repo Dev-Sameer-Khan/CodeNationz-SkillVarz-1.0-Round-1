@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: 'regular';
+    src: url(./assests/fonts/FontsFree-Net-Centauri.ttf);
+}
