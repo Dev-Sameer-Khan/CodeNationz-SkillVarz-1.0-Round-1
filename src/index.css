@@ -12,3 +12,7 @@
 *{
     font-family: ppneue;
 }
+
+::-webkit-scrollbar{
+    display: none;
+}

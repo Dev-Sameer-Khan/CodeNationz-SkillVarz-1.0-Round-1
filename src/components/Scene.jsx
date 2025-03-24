@@ -16,8 +16,10 @@ const Scene = () => {
 
   const handleClick = () => {
     gsap.to(sec.current, {
+      opacity: 0,
       display: "none",
-      duration: 1,
+      willChange: "opacity",
+      duration: 2,
       ease: "power3.out",
     });
   };
@@ -25,7 +27,7 @@ const Scene = () => {
   useEffect(() => {
     if (model.scene) {
       gsap.to(model.scene.rotation, {
-        y: Math.PI * 2,
+        y: -Math.PI * 2,
         duration: 20,
         repeat: -1,
         ease: "none",
