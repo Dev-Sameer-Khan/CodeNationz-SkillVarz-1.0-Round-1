@@ -1,14 +1,30 @@
 @import "tailwindcss";
 
 @font-face {
-    font-family: 'regular';
-    src: url(./assests/fonts/FontsFree-Net-Centauri.ttf);
+    font-family: 'font-1';
+    src: url(./assets/fonts/ppneuemontreal-medium.otf) format('opentype');
 }
 @font-face {
-    font-family: 'ppneue';
-    src: url(./assests/fonts/PPNeueMontreal-Regular.ttf);
+    font-family: 'font-2';
+    src: url(./assets/fonts/MonumentExtended-Regular.otf) format('opentype');
 }
 
 *{
-    font-family: ppneue;
+    font-family: 'font-1', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #131313;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #E2E1DF;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #000000;
 }

@@ -1,44 +1,96 @@
-import React from "react";
-import Dock from "./Dock";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa6";
-import { FaPinterest } from "react-icons/fa";
+import React, { useEffect, useRef, useState } from "react";
+import gsap from "gsap";
 
-const Navbar = () => {
-  const items = [
-    { icon: "", label: "Home", onClick: () => alert("Home!") },
-    { icon: "", label: "Archive", onClick: () => alert("Archive!") },
-    { icon: "", label: "Profile", onClick: () => alert("Profile!") },
-    { icon: "", label: "Settings", onClick: () => alert("Settings!") },
-  ];
+const Navbar = ({ heroRef }) => {
+  const navRef = useRef(null);
+  const navRef1 = useRef(null);
+  const [isHeroVisible, setIsHeroVisible] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    if (!heroRef?.current) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsHeroVisible(entry.isIntersecting);
+      },
+      { threshold: 0.5 }
+    );
+
+    observer.observe(heroRef.current);
+
+    return () => {
+      if (heroRef.current) observer.unobserve(heroRef.current);
+    };
+  }, [heroRef]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      setIsVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [prevScrollPos]);
+
+  useEffect(() => {
+    gsap.to(navRef.current, {
+      y: isVisible ? "0%" : "-100%",
+      willChange: "transform",
+      duration: 0.3,
+      ease: "power1.out",
+    });
+  }, [isVisible]);
+  useEffect(() => {
+    gsap.to(navRef1.current, {
+      y: isVisible ? "0%" : "-100%",
+      willChange: "transform",
+      duration: 0.3,
+      ease: "power1.out",
+    });
+  }, [isVisible]);
 
   return (
-    <nav className="fixed top-0 left-0 px-12 py-6 w-full h-screen z-10 flex justify-between flex-col pointer-events-auto">
-      <div className="flex justify-between w-[90%]">
-        <div className="logo text-[1.5vw]">Nimbus</div>
-        <div>
-          <h4 className="flex items-center gap-1">
-            Based in India <span className="inline-block w-4"><img src="https://res.cloudinary.com/dbgzq41x2/image/upload/v1742756992/libre-tech-drone_logo_r0cnuh.png" alt="" /></span> Drone
-            Worldwide
-          </h4>
-        </div>
-      </div>
-      <div>
-        <div className="flex justify-between w-full h-full -translate-y-8">
-        <div className="flex items-center -translate-x-28 justify-center flex-col">
-            <h4 className="-rotate-90">Events,Architecture & Objects</h4>
-        </div>
-        <div className="flex h-screen items-center justify-between flex-col">
-          <h4 className="underline font-semibold">EN</h4>
-          <div className="flex items-center justify-center gap-2 -translate-y-12 cursor-pointer">
-            <FaInstagram/>
-           <FaPinterest/>
-            <FaLinkedin/>
+    <header>
+      <nav
+        ref={navRef}
+        className={`desktop-nav text-[#131313] w-full fixed top-0 left-0 z-[999] flex items-center justify-between px-6 py-2 text-[2vw] max-[599px]:hidden transition-all duration-300 ${
+          isHeroVisible ? "" : "backdrop-blur-md bg-[#e2e1df67]"
+        }`}
+      >
+        <div className="left flex gap-10">
+          <div className="logo">
+            <h1>Designer</h1>
+          </div>
+          <div className="location">
+            <h4>Location</h4>
+            <h4 className="leading-none">
+              U.P, India{" "}
+              {new Date().toLocaleTimeString("en-US", {
+                hour: "2-digit",
+                minute: "2-digit",
+              })}
+            </h4>
           </div>
         </div>
+        <div className="menu flex items-center gap-4">
+          <h5>MENU</h5>
+          <span className="inline-block w-6 h-6 rounded-full bg-black"></span>
         </div>
-      </div>
-      <Dock items={items} className="cursor-pointer" />
-    </nav>
+      </nav>
+
+      <nav
+        ref={navRef1}
+        className={`mobile-nav text-[#131313] w-full hidden max-[599px]:block fixed top-0 left-0 z-[999] px-4 py-2 text-[6vw] ${
+          isHeroVisible ? "" : "backdrop-blur-md bg-[#e2e1df67]"
+        }`}
+      >
+        Menu +
+      </nav>
+    </header>
   );
 };
 

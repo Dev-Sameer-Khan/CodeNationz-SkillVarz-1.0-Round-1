@@ -1,54 +1,12 @@
-# Nimbus - Drone Product ShowCase Website
+# React + Vite
 
-## About the Project
-Nimbus is an innovative drone website designed for the SkillVarz 1.0 Hackathon. This website showcases cutting-edge drone technology, providing detailed insights into features, specifications, and use cases. Our goal is to deliver an immersive experience with a futuristic UI/UX and smooth animations.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Features
-- **Dynamic Loader Animation**: GSAP-powered smooth preloader.
-- **Interactive 3D Elements**: Utilizes WebGL/Three.js for realistic drone visuals.
-- **Seamless Navigation**: Optimized routing for a smooth user experience.
-- **Responsive Design**: Fully adaptive for all devices.
-- **Engaging Animations**: Awwwards-level micro-interactions and page transitions.
-- **Informative Sections**: Covers specifications, use cases, and latest drone technologies.
-- **Contact & Inquiry Form**: Easy communication for potential customers.
+Currently, two official plugins are available:
 
-## Tech Stack
-- **Frontend**: React.js, Tailwind CSS
-- **Animation**: GSAP, Three.js, Framer Motion, Anime.js, Lottie, ScrollTrigger, Lenis
-- **3D Graphics**: WebGL, Three.js, React Three Fiber
-- **Performance**: React Suspense, Lazy Loading
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Setup Instructions
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/Dev-Sameer-Khan/CodeNationz-SkillVarz-1.0-Round-1.git
-   ```
-2. Navigate to the project folder:
-   ```sh
-   cd nimbus
-   ```
-3. Install dependencies:
-   ```sh
-   npm install
-   ```
-4. Run the development server:
-   ```sh
-   npm run dev
-   ```
-5. Open the browser and go to:
-   ```sh
-   http://localhost:5173
-   ```
+## Expanding the ESLint configuration
 
-## Team Members
-- **[Sameer Khan](https://www.linkedin.com/in/dev-sameer-khan/)** - Frontend Developer
-- **[Pratik Rathore](https://www.linkedin.com/in/pratik-rathore-578a52236/)** - Frontend Developer
-- **[K Narayan Reddy](https://www.linkedin.com/in/k-narayan-reddy-67b6a6356/)** - Frontend Developer
-- **[Aditya](https://www.linkedin.com/in/aditya-k-2720a7251/)** - UI/UX Designer
-- **[Mumammad Muneeb](https://www.linkedin.com/in/muhammad-muneeb-a427a5321/)** - UI/UX Designer
-
-## License
-This project is created for the SkillVarz 1.0 Hackathon and is open for educational and showcase purposes only.
-
----
-**Note:** Further enhancements can be made post-hackathon based on user feedback and performance evaluations.
+If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
