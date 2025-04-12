@@ -54,6 +54,7 @@ const Work = () => {
   }, []);
 
   return (
+    
     <section className="w-full">
       <div className="w-full min-h-screen px-8  py-20 -mb-10 md:-mb-42 flex items-center justify-center">
         <div className="grid grid-cols-2 max-[599px]:grid-cols-1 gap-10 md:gap-4 w-full mt-[-30vh] max-[599px]:mt-0 max-w-screen-xl">
