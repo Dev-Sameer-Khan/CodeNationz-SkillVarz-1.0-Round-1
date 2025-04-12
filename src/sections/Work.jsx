@@ -35,7 +35,7 @@ const Work = () => {
           scrollTrigger: {
             trigger: img,
             start: "top 80%",
-            end: "bottom 60%",
+            end: "bottom top",
             scrub: 0.3,
           },
         });
