@@ -58,7 +58,7 @@ const Navbar = ({ heroRef }) => {
     <header>
       <nav
         ref={navRef}
-        className={`desktop-nav text-[#131313] w-full fixed top-0 left-0 z-[999] flex items-center justify-between px-6 py-2 text-[2vw] max-[599px]:hidden transition-all duration-300 ${
+        className={`desktop-nav text-[#131313] w-full fixed top-0 left-0 z-[999] flex items-center justify-between px-6 py-2 text-[1.5vw] max-[599px]:hidden transition-all duration-300 ${
           isHeroVisible ? "" : "backdrop-blur-md bg-[#e2e1df67]"
         }`}
       >
@@ -86,7 +86,9 @@ const Navbar = ({ heroRef }) => {
           isHeroVisible ? "" : "backdrop-blur-md bg-[#e2e1df67]"
         }`}
       >
+        <div className="flex justify-end">
         <Menu />
+        </div>
       </nav>
     </header>
   );

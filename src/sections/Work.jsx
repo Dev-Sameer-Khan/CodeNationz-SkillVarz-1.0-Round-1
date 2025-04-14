@@ -1,6 +1,7 @@
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import React, { useEffect, useRef } from "react";
+import Magnet from "../components/Magnet";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -143,10 +144,12 @@ const Work = () => {
                   </span>
                   <span className="text-xl">{project.name}</span>
                 </div>
-                <button className="text-white hover:underline flex items-center gap-2">
+                <Magnet padding={50} disabled={false} magnetStrength={5}>
+                <button className="text-white hover:underline flex items-center gap-2 cursor-pointer">
                   View Project
                   <span className="text-lg">⟶</span>
                 </button>
+                </Magnet>
               </div>
             </div>
           </div>

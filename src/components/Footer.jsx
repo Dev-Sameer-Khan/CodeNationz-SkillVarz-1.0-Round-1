@@ -1,6 +1,27 @@
-import React from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import React, { useEffect, useRef } from "react";
 
 const Footer = () => {
+
+  const imgRef = useRef(null)
+  gsap.registerPlugin(ScrollTrigger)
+
+  useEffect(()=>{
+
+    gsap.to(imgRef.current,{
+      rotate : 360,
+      willChange : "rotate",
+      scrollTrigger:{
+        trigger : "footer",
+        start : "20% center",
+        end : "center center",
+        scrub : .3
+      }
+    })
+
+  },[])
+
   return (
     <footer className="w-full min-h-screen  py-10 px-6 flex flex-col justify-between">
       {/* Top Heading Section */}
@@ -28,7 +49,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Links */}
-      <div className="mt-20 flex flex-wrap gap-x-15 md:gap-x-0 gap-y-5 md:gap-y-0 justify-between items-end w-full text-base  md:text-sm">
+      <div className="mt-20 text-[] flex flex-wrap gap-x-15 md:gap-x-0 gap-y-5 md:gap-y-0 justify-between items-end w-full text-base  md:text-sm">
         <div className="space-y-1">
           <p>BEHANCE</p>
           <p>INSTAGRAM</p>
@@ -45,8 +66,8 @@ const Footer = () => {
           <p>BY ADITYA 25</p>
           <p>ALL RIGHTS RESERVED</p>
         </div>
-        <div className="w-full flex justify-end mt-10 md:mt-0  md:w-60 ">
-          <img src="./src/assets/images/wheel.svg" alt="" />
+        <div ref={imgRef} className="w-full flex justify-end mt-10 md:mt-0 md:w-60 ">
+          <img className="origin-center" src="./src/assets/images/wheel2.svg" alt="" />
         </div>
       </div>
     </footer>

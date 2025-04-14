@@ -3,11 +3,11 @@ import Hero from "./sections/Hero";
 import Work from "./sections/Work";
 import ScrollVelocity from "./sections/ScrollVelocity";
 import About from "./sections/About";
+import LoaderHero from "./sections/LoaderHero";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Loader from "./components/Loader";
 import CustomCursor from "./components/CustomCursor";
-import Menu from "./components/Menu";
 
 const App = () => {
   const heroRef = useRef(null);
@@ -17,10 +17,11 @@ const App = () => {
       <CustomCursor />
       <Loader />
       <Navbar heroRef={heroRef} />
+      {/* <LoaderHero /> */}
       <Hero ref={heroRef} />
       <Work />
       <ScrollVelocity
-        texts={[" SINCE 2025 ", " FROM INDIA "]}
+        texts={[" SINCE 2025 !!", " FROM INDIA !!"]}
         velocity={50}
         className="bg-[#131313] text-[#E2E1DF]"
       />

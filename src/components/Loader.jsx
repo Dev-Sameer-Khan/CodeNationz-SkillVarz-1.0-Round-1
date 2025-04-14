@@ -101,7 +101,8 @@ const Loader = () => {
       <div ref={div4} className="w-[25%] h-full bg-zinc-800"></div>
       <div
         ref={textcont}
-        className="overlay w-full h-full absolute top-0 left-0 flex items-center justify-center text-[3vw] gap-2"
+        className="overlay w-full h-full absolute top-0 left-0 flex items-center justify-center max-[599px]:flex-col
+         text-[3vw] max-[599px]:text-[7vw] gap-2"
       >
         <h1 ref={text1} className="opacity-0">
           Web Designer

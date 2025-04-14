@@ -8,6 +8,11 @@ const Menu = () => {
   const [showText, setShowText] = useState(false);
   const menuRef = useRef(null);
   const linksRef = useRef([]);
+  const items = [
+    ["CULTURE", "APPROACH"],
+    ["PORTFOLIO", "CONTACTS"],
+    ["JOURNAL", ""],
+  ];
 
   const toggleMenu = () => {
     setOpen((prev) => !prev);
@@ -51,18 +56,17 @@ const Menu = () => {
 
   return (
     <>
+      {/* Button */}
       <button
         onClick={toggleMenu}
-        className={`group uppercase tracking-wider text-[4vw] sm:text-[2.5vw] md:text-[2vw] lg:text-[1.5vw] 
-    flex items-center justify-center transition-all duration-300 cursor-pointer 
-    ${open ? "fixed top-6 left-6 z-[1001]" : " z-[1000]"}`}
+        className={`group uppercase tracking-wider text-[4vw] sm:text-[3.5vw] md:text-[2vw] lg:text-[1.5vw] 
+        flex items-center justify-center transition-all duration-300 cursor-pointer 
+        ${open ? "z-[1001]" : " z-[1000]"}`}
       >
         <span
           className={`mr-2 transition-all duration-300 ${
             open ? "text-white" : "text-zinc-800"
-          } ${
-            showText || window.innerWidth < 640 ? "opacity-100" : "opacity-0"
-          }`}
+          } ${showText || window.innerWidth < 640 ? "opacity-100" : "opacity-0"}`}
         >
           {open ? "Close" : "Menu"}
         </span>
@@ -79,19 +83,59 @@ const Menu = () => {
         </Magnet>
       </button>
 
+      {/* Menu Content */}
       <div
         ref={menuRef}
-        className="fixed top-0 left-0 w-full h-screen overflow-hidden bg-[#131313] text-white z-[999] -translate-y-full flex flex-col justify-center items-center gap-12"
+        className="fixed top-0 left-0 w-full h-screen overflow-hidden bg-[#131313] text-[#ec008c] z-[999] -translate-y-full flex flex-col justify-between px-6 py-6"
       >
-        {["Home", "Work", "About", "Contact"].map((link, i) => (
-          <h1
-            key={i}
-            ref={(el) => (linksRef.current[i] = el)}
-            className="text-[8vw] sm:text-[6vw] md:text-[4.5vw] lg:text-[3vw] uppercase font-semibold cursor-pointer tracking-wider"
-          >
-            {link}
-          </h1>
-        ))}
+        {/* Header */}
+        <div className="flex justify-between items-start">
+          <div className="text-2xl font-bold text-white">ADITYA</div>
+        </div>
+
+        {/* Grid Nav */}
+        <div className="grid grid-cols-3 gap-6 justify-items-center items-center text-[8vw] sm:text-[6vw] md:text-[4.5vw] lg:text-[3vw] font-semibold uppercase">
+          {items.map((row, rowIndex) => (
+            <React.Fragment key={rowIndex}>
+              <h1
+                ref={(el) => (linksRef.current[rowIndex * 3] = el)}
+                className="cursor-pointer"
+              >
+                {row[0]}
+              </h1>
+              <span
+                ref={(el) => (linksRef.current[rowIndex * 3 + 1] = el)}
+                className="text-white text-[4vw] sm:text-[3vw]"
+              >
+                +
+              </span>
+              <h1
+                ref={(el) => (linksRef.current[rowIndex * 3 + 2] = el)}
+                className="cursor-pointer"
+              >
+                {row[1]}
+              </h1>
+            </React.Fragment>
+          ))}
+        </div>
+
+        {/* Footer */}
+        <div className="flex justify-between text-xs sm:text-sm uppercase font-light pt-6 text-white">
+          <div className="space-x-2">
+            <span className="text-gray-500">Italiano</span>
+            <span className="text-[#ec008c] font-semibold">English</span>
+          </div>
+          <div className="space-x-4">
+            <span>Instagram</span>
+            <span>Facebook</span>
+            <span>LinkedIn</span>
+          </div>
+          <div className="text-right space-x-3">
+            <span>©2025 DASS</span>
+            <span>Privacy</span>
+            <span>Credits</span>
+          </div>
+        </div>
       </div>
     </>
   );
