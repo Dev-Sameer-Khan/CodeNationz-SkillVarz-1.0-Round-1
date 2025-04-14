@@ -1,7 +1,7 @@
 import gsap from "gsap";
 import React, { useEffect, useRef } from "react";
 
-const Hero = ({ref}) => {
+const Hero = ({ ref }) => {
   let textanim = useRef(null);
 
   useEffect(() => {
@@ -17,14 +17,17 @@ const Hero = ({ref}) => {
           end: "bottom top",
           scrub: 0.3,
         },
-        yPercent: 150,
+        yPercent: 130,
         willChange: "transform",
       }
     );
   }, []);
 
   return (
-    <section ref={ref} className="w-full min-h-screen bg-[#E2E1DF] text-[#131313] px-6 max-[599px]:px-4 py-20 flex flex-col gap-10 overflow-hidden">
+    <section
+      ref={ref}
+      className="w-full min-h-screen bg-[#E2E1DF] text-[#131313] px-6 max-[599px]:px-4 py-20 flex flex-col gap-10 overflow-hidden"
+    >
       <div className="head1 font-[font-2] w-full flex items-center justify-between max-[599px]:flex-col max-[599px]:items-start leading-none">
         <h1 className="font-[200] text-[15vw]">GD</h1>
         <h1 className="font-[800] text-[15vw] tracking-none">ADITYA</h1>

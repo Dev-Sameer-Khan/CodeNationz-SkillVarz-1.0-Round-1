@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
+import Menu from "./Menu";
 
 const Navbar = ({ heroRef }) => {
   const navRef = useRef(null);
@@ -76,19 +77,16 @@ const Navbar = ({ heroRef }) => {
             </h4>
           </div>
         </div>
-        <div className="menu flex items-center gap-4">
-          <h5>MENU</h5>
-          <span className="inline-block w-6 h-6 rounded-full bg-black"></span>
-        </div>
+        <Menu />
       </nav>
 
       <nav
         ref={navRef1}
-        className={`mobile-nav text-[#131313] w-full hidden max-[599px]:block fixed top-0 left-0 z-[999] px-4 py-2 text-[6vw] ${
+        className={`mobile-nav text-[#131313] w-full hidden max-[599px]:block fixed top-0 left-0 z-[999] px-6 py-4 text-[6vw] ${
           isHeroVisible ? "" : "backdrop-blur-md bg-[#e2e1df67]"
         }`}
       >
-        Menu +
+        <Menu />
       </nav>
     </header>
   );

@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
 
 const Footer = () => {
   return (
     <footer className="w-full min-h-screen  py-10 px-6 flex flex-col justify-between">
-      
       {/* Top Heading Section */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end">
         {/* Left Text */}
@@ -13,7 +12,9 @@ const Footer = () => {
 
         {/* Right Text */}
         <div className="text-right max-w-xs md:max-w-md mt-2 md:mt-0">
-          <h2 className="text-[23vw] md:text-[8vw] font-extrabold leading-none">TOUCH</h2>
+          <h2 className="text-[23vw] md:text-[8vw] font-extrabold leading-none">
+            TOUCH
+          </h2>
           <p className="mt-2 text-sm md:text-base opacity-80">
             Feel Free To Mail, Reach Out To Me.
           </p>
@@ -49,7 +50,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

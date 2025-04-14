@@ -54,7 +54,6 @@ const Work = () => {
   }, []);
 
   return (
-    
     <section className="w-full">
       <div className="w-full min-h-screen px-8  py-20 -mb-10 md:-mb-42 flex items-center justify-center">
         <div className="grid grid-cols-2 max-[599px]:grid-cols-1 gap-10 md:gap-4 w-full mt-[-30vh] max-[599px]:mt-0 max-w-screen-xl">
@@ -107,7 +106,9 @@ const Work = () => {
           <div className="flex items-start justify-between">
             <div>
               <p className="text-[#FF0000] font-semibold text-base">04</p>
-              <p className="text-[#FF0000] font-semibold text-lg">Portfolio'22</p>
+              <p className="text-[#FF0000] font-semibold text-lg">
+                Portfolio'22
+              </p>
             </div>
             <div className="text-right  text-sm opacity-80 space-y-1">
               <p>Empowering Farmers, Enriching India</p>
@@ -117,7 +118,6 @@ const Work = () => {
               <p>Pre-Setup Analysis</p>
             </div>
           </div>
-
         </div>
       </div>
 
