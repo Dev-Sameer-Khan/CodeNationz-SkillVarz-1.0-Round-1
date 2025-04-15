@@ -110,10 +110,10 @@ const Menu = () => {
       >
         {/* Header */}
         <div className="flex justify-between items-start">
-          <div className="text-2xl font-bold text-white">ADITYA</div>
+          <div className="text-3xl font-bold text-white">ADITYA</div>
         </div>
 
-        <div className="w-1/2 max-[599px]:w-full h-full pt-10 flex items-start flex-col gap-6 text-[8vw] sm:text-[4vw] md:text-[4.5vw] lg:text-[3vw] font-semibold uppercase">
+        <div className="w-full h-full pt-10 flex items-center justify-center flex-col gap-6 text-[8vw] sm:text-[4vw] md:text-[8vw] lg:text-[6vw] font-semibold uppercase">
       {items.map((row, rowIndex) => {
         const firstIndex = rowIndex * 3;
         const plusIndex = firstIndex + 1;
@@ -125,7 +125,7 @@ const Menu = () => {
         return (
           <div
             key={rowIndex}
-            className="flex justify-center items-center gap-6"
+            className="flex justify-center items-center gap-6 max-[599px]:gap-2"
           >
             {/* Left Link */}
             {row[0] && (
@@ -146,7 +146,7 @@ const Menu = () => {
             {row[0] && row[1] && (
               <span
                 ref={plusRef}
-                className={`plus-span transition-opacity duration-300 font-extralight text-[4vw] sm:text-[3vw] ${
+                className={`plus-span transition-opacity duration-300 font-extralight text-[10vw] sm:text-[5vw] md:text-[6vw] ${
                   hoveredIndex !== null ? "opacity-30" : "opacity-100"
                 }`}
               >
@@ -176,20 +176,20 @@ const Menu = () => {
         {/* Footer */}
         <div className="flex justify-between text-xs sm:text-sm uppercase font-light pt-6 text-white">
           <div className="space-x-2">
-            <span className="text-[#E2E1DF] opacity-50 font-semibold">
+            <span className="text-[#E2E1DF] opacity-50 font-semibold cursor-pointer">
               Italiano
             </span>
-            <span className="text-[#E2E1DF] font-semibold">English</span>
+            <span className="text-[#E2E1DF] font-semibold cursor-pointer">English</span>
           </div>
           <div className="space-x-4">
-            <span>Instagram</span>
-            <span>Facebook</span>
-            <span>LinkedIn</span>
+            <span className="cursor-pointer hover:opacity-70 transition-opacity">Instagram</span>
+            <span className="cursor-pointer hover:opacity-70 transition-opacity">Dribble</span>
+            <span className="cursor-pointer hover:opacity-70 transition-opacity">LinkedIn</span>
           </div>
           <div className="text-right space-x-3">
-            <span>©2025 DASS</span>
-            <span>Privacy</span>
-            <span>Credits</span>
+            <span>©2025 ADITYA</span>
+            <span className="cursor-pointer hover:opacity-70 transition-opacity">Privacy</span>
+            <span className="cursor-pointer hover:opacity-70 transition-opacity">Credits</span>
           </div>
         </div>
       </div>

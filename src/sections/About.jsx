@@ -2,26 +2,26 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="min-h-screen px-4 py-4 mt-20 max-[599px]:mt-10">
+    <div className="min-h-screen px-4 py-4 mt-20 max-[599px]:mt-10 font-[font-1]">
       <div className="text-start mb-8 md:mb-32 leading-10 md:leading-15 ">
-        <h1 className="text-[40px] md:text-6xl lg:text-7xl font-extrabold tracking-wider">
+        <h1 className="text-[40px] md:text-6xl lg:text-7xl font-extrabold tracking-wider font-[font-3]">
           TYPOGRAPHY &
         </h1>
-        <h2 className="text-[40px] md:text-6xl lg:text-7xl italic tracking-widest font-light md:ml-58 mb-2.5 md:mb-5 mt-0">
+        <h2 className="text-[40px] md:text-6xl lg:text-7xl italic tracking-widest font-extralight md:ml-58 mb-2.5 md:mb-5 mt-0 font-[font-2]">
           CREATIVITY
         </h2>
-        <div className="text-4xl md:text-6xl lg:text-6xl md:flex-col md:justify-self-end flex flex-col  lg:flex-row leading-[20px] md:leading-6 font-light">
-          <span className="font-normal tracking-widest">CREATES DIGITAL</span>{" "}
+        <div className="text-4xl md:text-6xl lg:text-6xl md:flex-col md:justify-self-end flex flex-col gap-2 max-[599px]:gap-0 lg:flex-row leading-[20px] md:leading-6 font-light">
+          <span className="">CREATES DIGITAL</span>
           <br />
-          <span className="tracking-widest font-bold ">EXPERIENCES</span>
+          <span className="">EXPERIENCES</span>
         </div>
       </div>
       <div className="w-full min-h-[30vh] flex flex-col md:flex-row justify-between items-center md:items-end gap-3 mb-8 md:mb-20">
         <div className="bg-gray-700 w-full md:w-[50%] lg:w-[50%] h-[50vh] md:mb-30 rounded-xl overflow-hidden">
-          <img className="w-full h-full object-cover hover:scale-105 transition-all duration-300" src="./src/assets/images/about1.png" alt="" />
+          <img className="w-full h-full object-cover hover:scale-105 transition-all duration-300" src="https://res.cloudinary.com/dbgzq41x2/image/upload/v1744716304/about1_ja3o3s.png" alt="" />
         </div>
         <div className="bg-gray-700 w-full md:w-[50%] lg:w-[50%] h-[50vh] rounded-xl overflow-hidden">
-        <img className="w-full h-full object-cover hover:scale-105 transition-all duration-300" src="./src/assets/images/about2.png" alt="" />
+        <img className="w-full h-full object-cover hover:scale-105 transition-all duration-300" src="https://res.cloudinary.com/dbgzq41x2/image/upload/v1744716304/about2_w1endv.png" alt="" />
 
         </div>
       </div>

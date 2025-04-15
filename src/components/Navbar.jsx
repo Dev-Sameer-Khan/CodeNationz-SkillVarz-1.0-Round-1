@@ -58,8 +58,8 @@ const Navbar = ({ heroRef }) => {
     <header>
       <nav
         ref={navRef}
-        className={`desktop-nav text-[#131313] w-full fixed top-0 left-0 z-[999] flex items-center justify-between px-6 py-2 text-[1.5vw] max-[599px]:hidden transition-all duration-300 ${
-          isHeroVisible ? "" : "backdrop-blur-md bg-[#e2e1df67]"
+        className={`desktop-nav text-[#131313] w-full fixed top-0 left-0 z-[999] flex items-center justify-between px-6 py-2 text-[1.5vw] max-[1025px]:text-[2.5vw] max-[599px]:hidden transition-all duration-300 font-[font-1] ${
+          isHeroVisible ? "" : "backdrop-blur-md bg-[#E2E1DF]"
         }`}
       >
         <div className="left flex gap-10">

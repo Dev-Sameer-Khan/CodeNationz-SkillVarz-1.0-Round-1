@@ -30,7 +30,7 @@ const CustomCursor = () => {
   }, []);
 
   return (
-    <div className="max-[1024px]:hidden">
+    <div className="max-[1025px]:hidden">
       {/* Outer Circle */}
       <div
         ref={outerRef}

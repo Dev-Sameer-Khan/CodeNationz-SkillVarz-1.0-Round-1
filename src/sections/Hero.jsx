@@ -85,14 +85,14 @@ const Hero = ({ ref }) => {
   return (
     <section
       ref={ref}
-      className="w-full min-h-screen bg-[#E2E1DF] text-[#131313] px-6 max-[599px]:px-4 py-20 flex flex-col gap-10 overflow-hidden"
+      className="w-full min-h-screen bg-[#E2E1DF] text-[#131313] px-6 max-[599px]:px-4 py-20 flex flex-col gap-10 overflow-hidden font-[font-1]"
     >
-      <div className="head1 font-[font-2] w-full flex items-center justify-between max-[599px]:flex-col max-[599px]:items-start leading-none">
-        <h1 ref={txt1} className="font-[200] text-[15vw]">GD</h1>
-        <h1 ref={txt2} className="font-[800] text-[15vw] tracking-none">ADITYA</h1>
+      <div className="head1 w-full flex items-center justify-between max-[599px]:flex-col max-[599px]:items-start leading-none">
+        <h1 ref={txt1} className="font-[200] text-[12vw]">GD</h1>
+        <h1 ref={txt2} className="font-[font-3] text-[12vw] tracking-none">ADITYA</h1>
       </div>
       <div className="head2 flex items-center justify-end max-[599px]:hidden">
-        <p ref={txt3} className="w-[53%]">
+        <p ref={txt3} className="w-[60%]">
           Websites are more than just functional spaces—they're immersive
           experiences
           where visuals, typography and motion come together to tell a story, evoke
@@ -104,7 +104,7 @@ const Hero = ({ ref }) => {
       </div>
       <div className="head3 w-full h-full mt-20 flex items-center justify-between max-[599px]:flex-col max-[599px]:items-start">
         <div className="para w-full">
-          <img ref={img1} src="./src/assets/images/wheel.svg" alt="" />
+          <img ref={img1} src="https://res.cloudinary.com/dbgzq41x2/image/upload/v1744716304/wheel_zte6j0.svg" alt="" />
           <p ref={txt4} className="w-[65%] mt-6">
             For me, web designing is an art where logic and creativity meet. I enjoy
             crafting sleek interfaces, dynamic interactions, and intuitive designs that
@@ -115,14 +115,14 @@ const Hero = ({ ref }) => {
           <img
             ref={img2}
             className="w-full h-full object-cover object-top"
-            src="https://s3-alpha-sig.figma.com/img/f36c/3d51/0153a4a0fc74a4a6144f47ecdce59d9b?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ryTNM9n38mJbC8HR4yN~1gfK6eJSGb8PkrN3EZgMgDndNxhDaqNxtQ0jybTbT8repXj5R8-w9-IXfzkD6AJVfisQnA5mPibEsg0DGMeAKxhBTDtu9UOHZbbA-VbSO-k~yO3MmYCKRiFCC9OXPlYnJJthXHZyJ6thdzNfq7Ykh3jD3t2fb-q2AvlQdiI8LSYqjZMcHpAbSXofqLLqCgH5FDvqU3GpvOoBpPESp45cbdiXe78tVqMokLKg27Tut-gzq61U24p2k6Hur2Q2oTvHCg7NGBf2cjh4iYkXlZ3jUvK8UKn93gpPiuwIxUOZNxWhvqBswbx07wieJqQA7ITJLQ__"
+            src="https://res.cloudinary.com/dbgzq41x2/image/upload/v1744716303/adi_cjbwy9.png"
             alt=""
           />
         </div>
       </div>
       <div className="head4 w-[60%]">
         <h3 ref={textanim} className="text-[10vw] leading-none">
-          FEATURED WORK
+          FEATURED <span className="font-[font-3]">WORK</span>
         </h3>
       </div>
     </section>

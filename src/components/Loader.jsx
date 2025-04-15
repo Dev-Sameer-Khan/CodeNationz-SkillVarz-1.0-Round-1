@@ -92,7 +92,7 @@ const Loader = () => {
   return (
     <div
       ref={loader}
-      className="w-full h-screen fixed top-0 left-0 z-[99999999] text-white flex items-center justify-center overflow-hidden"
+      className="w-full h-screen fixed top-0 left-0 z-[99999999] text-white flex items-center justify-center overflow-hidden font-[font-2]"
     >
       <CustomCursor />
       <div ref={div1} className="w-[25%] h-full bg-zinc-800"></div>
@@ -102,12 +102,12 @@ const Loader = () => {
       <div
         ref={textcont}
         className="overlay w-full h-full absolute top-0 left-0 flex items-center justify-center max-[599px]:flex-col
-         text-[3vw] max-[599px]:text-[7vw] gap-2"
+         text-[2.5vw] max-[599px]:text-[5vw] gap-2 max-[599px]:gap-0"
       >
-        <h1 ref={text1} className="opacity-0">
+        <h1 ref={text1} className="opacity-0 ">
           Web Designer
         </h1>
-        <h1 ref={text2} className="opacity-0">
+        <h1 ref={text2} className="opacity-0 ">
           & Developer Based In India
         </h1>
       </div>

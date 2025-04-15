@@ -2,16 +2,18 @@
 
 @font-face {
   font-family: "font-1";
-  src: url(./assets/fonts/ppneuemontreal-medium.otf) format("opentype");
+  src: url(./assets/fonts/ppneuemontreal-medium.ttf) format("truetype");
 }
 @font-face {
   font-family: "font-2";
-  src: url(./assets/fonts/MonumentExtended-Regular.otf) format("opentype");
+  src: url(./assets/fonts/MonumentExtended-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "font-3";
+  src: url(./assets/fonts/MonumentExtended-Ultrabold.ttf) format("truetype");
 }
 
-* {
-  font-family: "font-1", sans-serif;
-}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
