@@ -82,11 +82,11 @@ const Navbar = ({ heroRef }) => {
 
       <nav
         ref={navRef1}
-        className={`mobile-nav text-[#131313] w-full hidden max-[599px]:block fixed top-0 left-0 z-[999] px-6 py-4 text-[6vw] ${
+        className={`mobile-nav text-[#131313] w-full hidden max-[599px]:block fixed top-0 left-0 z-[999] px-4 py-4 text-[6vw] ${
           isHeroVisible ? "" : "backdrop-blur-md bg-[#e2e1df67]"
         }`}
       >
-        <div className="flex justify-end">
+        <div className="flex items-center justify-end">
         <Menu />
         </div>
       </nav>

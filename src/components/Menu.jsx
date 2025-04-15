@@ -8,6 +8,9 @@ const Menu = () => {
   const [showText, setShowText] = useState(false);
   const menuRef = useRef(null);
   const linksRef = useRef([]);
+  const plusRef = useRef([]);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
   const items = [
     ["CULTURE", "APPROACH"],
     ["PORTFOLIO", "CONTACTS"],
@@ -54,6 +57,17 @@ const Menu = () => {
     }
   }, [open]);
 
+  const handleMouseMove = (e) => {
+    const spans = gsap.utils.toArray(".plus-span");
+    spans.forEach((span) => {
+        gsap.to(span, {
+          rotate: Math.floor(e.clientX / 3),
+          duration: 0.3,
+          ease: "none",
+        });
+    });
+  };
+  
   return (
     <>
       {/* Button */}
@@ -66,12 +80,18 @@ const Menu = () => {
         <span
           className={`mr-2 transition-all duration-300 ${
             open ? "text-white" : "text-zinc-800"
-          } ${showText || window.innerWidth < 640 ? "opacity-100" : "opacity-0"}`}
+          } ${
+            showText || window.innerWidth < 640 ? "opacity-100" : "opacity-0"
+          }`}
         >
           {open ? "Close" : "Menu"}
         </span>
 
-        <Magnet padding={50} disabled={false} magnetStrength={5}>
+        <Magnet
+          padding={50}
+          disabled={window.innerWidth < 1240 ? true : false}
+          magnetStrength={5}
+        >
           <span
             onMouseEnter={() => setShowText(true)}
             onMouseLeave={() => setShowText(false)}
@@ -83,47 +103,83 @@ const Menu = () => {
         </Magnet>
       </button>
 
-      {/* Menu Content */}
       <div
+      onMouseMove={handleMouseMove}
         ref={menuRef}
-        className="fixed top-0 left-0 w-full h-screen overflow-hidden bg-[#131313] text-[#ec008c] z-[999] -translate-y-full flex flex-col justify-between px-6 py-6"
+        className="fixed top-0 left-0 w-full h-screen overflow-hidden bg-[#131313] text-[#E2E1DF] z-[999] -translate-y-full flex flex-col justify-between px-4 pb-6 pt-3"
       >
         {/* Header */}
         <div className="flex justify-between items-start">
           <div className="text-2xl font-bold text-white">ADITYA</div>
         </div>
 
-        {/* Grid Nav */}
-        <div className="grid grid-cols-3 gap-6 justify-items-center items-center text-[8vw] sm:text-[6vw] md:text-[4.5vw] lg:text-[3vw] font-semibold uppercase">
-          {items.map((row, rowIndex) => (
-            <React.Fragment key={rowIndex}>
+        <div className="w-1/2 max-[599px]:w-full h-full pt-10 flex items-start flex-col gap-6 text-[8vw] sm:text-[4vw] md:text-[4.5vw] lg:text-[3vw] font-semibold uppercase">
+      {items.map((row, rowIndex) => {
+        const firstIndex = rowIndex * 3;
+        const plusIndex = firstIndex + 1;
+        const secondIndex = firstIndex + 2;
+        
+        // Skip rendering empty rows
+        if (!row[0] && !row[1]) return null;
+        
+        return (
+          <div
+            key={rowIndex}
+            className="flex justify-center items-center gap-6"
+          >
+            {/* Left Link */}
+            {row[0] && (
               <h1
-                ref={(el) => (linksRef.current[rowIndex * 3] = el)}
-                className="cursor-pointer"
+                onMouseEnter={() => setHoveredIndex(firstIndex)}
+                onMouseLeave={() => setHoveredIndex(null)}
+                className={`cursor-pointer transition-opacity duration-300 ${
+                  hoveredIndex !== null && hoveredIndex !== firstIndex
+                    ? "opacity-30"
+                    : "opacity-100"
+                }`}
               >
                 {row[0]}
               </h1>
+            )}
+            
+            {/* Plus Sign - only show if both items exist */}
+            {row[0] && row[1] && (
               <span
-                ref={(el) => (linksRef.current[rowIndex * 3 + 1] = el)}
-                className="text-white text-[4vw] sm:text-[3vw]"
+                ref={plusRef}
+                className={`plus-span transition-opacity duration-300 font-extralight text-[4vw] sm:text-[3vw] ${
+                  hoveredIndex !== null ? "opacity-30" : "opacity-100"
+                }`}
               >
                 +
               </span>
+            )}
+            
+            {/* Right Link */}
+            {row[1] && (
               <h1
-                ref={(el) => (linksRef.current[rowIndex * 3 + 2] = el)}
-                className="cursor-pointer"
+                onMouseEnter={() => setHoveredIndex(secondIndex)}
+                onMouseLeave={() => setHoveredIndex(null)}
+                className={`cursor-pointer transition-opacity duration-300 ${
+                  hoveredIndex !== null && hoveredIndex !== secondIndex
+                    ? "opacity-30"
+                    : "opacity-100"
+                }`}
               >
                 {row[1]}
               </h1>
-            </React.Fragment>
-          ))}
-        </div>
+            )}
+          </div>
+        );
+      })}
+    </div>
 
         {/* Footer */}
         <div className="flex justify-between text-xs sm:text-sm uppercase font-light pt-6 text-white">
           <div className="space-x-2">
-            <span className="text-gray-500">Italiano</span>
-            <span className="text-[#ec008c] font-semibold">English</span>
+            <span className="text-[#E2E1DF] opacity-50 font-semibold">
+              Italiano
+            </span>
+            <span className="text-[#E2E1DF] font-semibold">English</span>
           </div>
           <div className="space-x-4">
             <span>Instagram</span>
