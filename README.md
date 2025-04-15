@@ -95,7 +95,7 @@ The portfolio is broken into the following animated, scroll-based sections:
 ## 👨‍💻 Developers
 
 **Sameer Khan**  
-Frontend Developer | UI/UX Enthusiast | Creative Coder  
+Frontend Developer | 3D Developer | Creative Coder  
 
 🔗 [GitHub](https://github.com/Dev-Sameer-Khan)  
 🔗 [LinkedIn](https://www.linkedin.com/in/sameer-khan-dev)
@@ -103,32 +103,30 @@ Frontend Developer | UI/UX Enthusiast | Creative Coder
 **K Narayn Reddy**  
 Frontend Developer 
 
-🔗 [GitHub](https://github.com/Dev-Sameer-Khan)  
-🔗 [LinkedIn](https://www.linkedin.com/in/sameer-khan-dev)
+🔗 [GitHub](https://github.com/NarayanReddy1702)  
+🔗 [LinkedIn](https://www.linkedin.com/in/k-narayan-reddy-67b6a6356?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
 
 **Pratik Rathor**  
-Frontend Developer | UI/UX Enthusiast | Creative Coder  
+Frontend Developer  Creative Coder  
 
-🔗 [GitHub](https://github.com/Dev-Sameer-Khan)  
-🔗 [LinkedIn](https://www.linkedin.com/in/sameer-khan-dev)
+🔗 [GitHub](https://github.com/Pratik18Rathore)  
+🔗 [LinkedIn](https://www.linkedin.com/in/pratik-rathore-578a52236/)
 
 ---
 
 ## 👨‍🎨 Designers
 
 **Aditya GC**  
-UI/UX Designer | Interface Thinker | Visual Storyteller  
+UI/UX Designer | Animation Expert | Visual Storyteller  
 
-🔗 [Dribbble](https://dribbble.com/) *(Add actual link)*  
-🔗 [Behance](https://behance.net/) *(Add actual link)*  
-🔗 [LinkedIn](https://www.linkedin.com/) *(Add actual link)*  
+🔗 [Github](https://github.com/adi0900) 
+🔗 [LinkedIn](https://www.linkedin.com/in/aditya-k-2720a7251/)   
 
 **Muhammd Muneeb**  
 UI/UX Designer | Interface Thinker | Visual Storyteller  
 
-🔗 [Dribbble](https://dribbble.com/) *(Add actual link)*  
-🔗 [Behance](https://behance.net/) *(Add actual link)*  
-🔗 [LinkedIn](https://www.linkedin.com/) *(Add actual link)*  
+🔗 [Github](https://github.com/muneeb-1122/) 
+🔗 [LinkedIn](https://www.linkedin.com/in/muhammadmuneeb12/)  
 
 ---
 
