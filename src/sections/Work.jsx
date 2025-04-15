@@ -29,7 +29,7 @@ const Work = () => {
       id: 4,
       name: "Portfolio'22",
       image:
-        "https://res.cloudinary.com/dbgzq41x2/image/upload/v1744716305/project4_i5ajpi.png",
+        "https://res.cloudinary.com/dbgzq41x2/image/upload/v1744719237/project4_i5ajpi.png",
     }
   ];
 

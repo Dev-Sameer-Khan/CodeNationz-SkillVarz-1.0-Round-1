@@ -4,10 +4,10 @@ const About = () => {
   return (
     <div className="min-h-screen px-4 py-4 mt-20 max-[599px]:mt-10 font-[font-1]">
       <div className="text-start mb-8 md:mb-32 leading-10 md:leading-15 ">
-        <h1 className="text-[40px] md:text-6xl lg:text-7xl font-extrabold tracking-wider font-[font-3]">
+        <h1 className="text-[30px] md:text-6xl lg:text-7xl font-extrabold tracking-wider font-[font-3]">
           TYPOGRAPHY &
         </h1>
-        <h2 className="text-[40px] md:text-6xl lg:text-7xl italic tracking-widest font-extralight md:ml-58 mb-2.5 md:mb-5 mt-0 font-[font-2]">
+        <h2 className="text-[30px] md:text-6xl lg:text-7xl italic tracking-widest font-extralight md:ml-58 mb-2.5 md:mb-5 mt-0 font-[font-2]">
           CREATIVITY
         </h2>
         <div className="text-4xl md:text-6xl lg:text-6xl md:flex-col md:justify-self-end flex flex-col gap-2 max-[599px]:gap-0 lg:flex-row leading-[20px] md:leading-6 font-light">

@@ -26,7 +26,7 @@ const Footer = () => {
     <footer className="w-full min-h-screen py-10 px-6 max-[599px]:px-4 flex flex-col justify-between font-[font-1]">
       
     {/* Top Heading Section */}
-    <div className="flex flex-col md:flex-row justify-between items-start ">
+    <div className="flex flex-col md:flex-row justify-between items-start max-[599px]:items-center">
       {/* Left Text */}
       <div className="text-[20vw] md:text-[7vw] font-extrabold leading-none font-[font-3]">
         <span className="block">GET IN</span>
