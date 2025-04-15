@@ -1,12 +1,141 @@
-# React + Vite
+# 💼 Personal Portfolio Website – SkillVarz 1.0 (Round 1)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **"Your work deserves a stage. This is mine."**  
+> Built for the **SkillVarz 1.0 Hackathon** by **Gravity Coding x CodeNationz**
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Getting Started
 
-## Expanding the ESLint configuration
+To get a local copy of the project up and running, follow these simple steps:
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Clone the repository
+```bash
+git clone https://github.com/Dev-Sameer-Khan/CodeNationz-SkillVarz-1.0-Round-1.git
+```
+### 2. Install dependencies
+```bash
+npm install
+```
+### 3. Run the development server
+```bash
+npm run dev
+```
+---
+
+## 🔗 Live Demo
+
+🌐 **[Live Site](https://code-nationz-skill-varz-1-0-round-1.vercel.app/)**  
+📁 **[Source Code](https://github.com/Dev-Sameer-Khan/CodeNationz-SkillVarz-1.0-Round-1)**  
+🔗 **[LinkedIn](https://www.linkedin.com/in/sameer-khan-dev)**
+
+---
+
+## ✨ Key Features
+
+- **🎨 Interactive Hero Section**  
+  A dynamic introduction with smooth animations.  
+  Catchy headline with an interactive call-to-action.
+
+- **🚀 Project Showcase with Live Previews**  
+  Display of live project demos with hover-based interactions.  
+  Provides visitors with direct access to your work, including details and preview.
+
+- **🎬 Smooth Scroll & Animations**  
+  Smooth scrolling experience with Lenis for a polished feel.  
+  Animated section transitions powered by GSAP and Framer Motion.
+
+- **📱 Responsive Design**  
+  Fully responsive layout for mobile, tablet, and desktop screens.  
+  Optimized for various devices ensuring smooth navigation and UI consistency.
+
+- **🧲 Custom Cursor**  
+  A custom-designed mouse cursor for a more engaging and personalized browsing experience.
+
+- **📞 Integrated Contact & Social Links**  
+  Easy access to connect through integrated contact details and social media profiles (LinkedIn, GitHub, etc.).
+
+- **🧭 Navbar with Scroll-based Visibility**  
+  Sticky navbar with dynamic scroll behavior that appears/disappears based on scrolling.
+
+- **🦶 Footer with Contact Info**  
+  Provides a clean footer with contact details and social links for easy connection.
+
+
+## 🔧 Tech Stack
+
+| Technology         | Purpose                             |
+|--------------------|-------------------------------------|
+| **React 19**        | Component-based frontend structure  |
+| **Tailwind CSS 4**  | Utility-first styling               |
+| **GSAP**            | Scroll-triggered animations         |
+| **Framer Motion**   | Smooth element transitions          |
+| **Lenis**           | Smooth scrolling experience         |
+| **Vite**            | Fast development tooling            |
+
+---
+
+## 📂 Project Structure / Section Flow
+
+The portfolio is broken into the following animated, scroll-based sections:
+
+| Section            | Description |
+|--------------------|-------------|
+| 🎯 `Hero`          | The landing section with impactful intro and call-to-action |
+| 🔍 `Work`          | Projects showcase with live previews and animations |
+| 💫 `ScrollVelocity`| Horizontal scrolling banner with moving text ("SINCE 2025 !!", "FROM INDIA !!") |
+| 👤 `About`         | Personal story, background, and skills with creative layout |
+| 📩 `Footer`        | Contact info, social links, and smooth exit animation |
+| 🚀 `Loader`        | Preloader animation on initial load for visual impact |
+| 🔧 `Navbar`        | Sticky navigation with scroll-based behavior |
+| 🖱️ `CustomCursor`  | Replaces default mouse with a unique custom cursor |
+
+---
+
+## 👨‍💻 Developers
+
+**Sameer Khan**  
+Frontend Developer | UI/UX Enthusiast | Creative Coder  
+
+🔗 [GitHub](https://github.com/Dev-Sameer-Khan)  
+🔗 [LinkedIn](https://www.linkedin.com/in/sameer-khan-dev)
+
+**K Narayn Reddy**  
+Frontend Developer 
+
+🔗 [GitHub](https://github.com/Dev-Sameer-Khan)  
+🔗 [LinkedIn](https://www.linkedin.com/in/sameer-khan-dev)
+
+**Pratik Rathor**  
+Frontend Developer | UI/UX Enthusiast | Creative Coder  
+
+🔗 [GitHub](https://github.com/Dev-Sameer-Khan)  
+🔗 [LinkedIn](https://www.linkedin.com/in/sameer-khan-dev)
+
+---
+
+## 👨‍🎨 Designers
+
+**Aditya GC**  
+UI/UX Designer | Interface Thinker | Visual Storyteller  
+
+🔗 [Dribbble](https://dribbble.com/) *(Add actual link)*  
+🔗 [Behance](https://behance.net/) *(Add actual link)*  
+🔗 [LinkedIn](https://www.linkedin.com/) *(Add actual link)*  
+
+**Muhammd Muneeb**  
+UI/UX Designer | Interface Thinker | Visual Storyteller  
+
+🔗 [Dribbble](https://dribbble.com/) *(Add actual link)*  
+🔗 [Behance](https://behance.net/) *(Add actual link)*  
+🔗 [LinkedIn](https://www.linkedin.com/) *(Add actual link)*  
+
+---
+
+## 🏁 Submission Details
+
+- 🚀 **Hackathon**: SkillVarz 1.0  
+- 📌 **Round**: 1  
+- 📁 **Problem Statement**: 01 – Portfolio Website
+
+---
