@@ -67,8 +67,8 @@ const Work = () => {
           {/* Row 1 */}
           <div className="flex items-start justify-between">
             <div>
-              <p className="text-[#FF0000] font-semibold text-base">01</p>
-              <p className="text-[#FF0000] font-semibold text-lg">AMALGUM</p>
+              <p className="text-red-500 font-semibold text-base">01</p>
+              <p className="text-red-500 font-semibold text-lg">AMALGUM</p>
             </div>
             <div className="text-right  text-sm opacity-80 space-y-1">
               <p>Empowering Farmers, Enriching India</p>
@@ -82,8 +82,8 @@ const Work = () => {
           {/* Row 2 */}
           <div className="flex items-start justify-between">
             <div>
-              <p className="text-[#FF0000] font-semibold text-base">02</p>
-              <p className="text-[#FF0000] font-semibold text-lg">Bayez.AI</p>
+              <p className="text-red-500 font-semibold text-base">02</p>
+              <p className="text-red-500 font-semibold text-lg">Bayez.AI</p>
             </div>
             <div className="text-right  text-sm opacity-80 space-y-1">
               <p>Empowering Farmers, Enriching India</p>
@@ -97,8 +97,8 @@ const Work = () => {
           {/* Row 3 */}
           <div className="flex items-start justify-between">
             <div>
-              <p className="text-[#FF0000] font-semibold text-base">03</p>
-              <p className="text-[#FF0000] font-semibold text-lg">Nimbus</p>
+              <p className="text-red-500 font-semibold text-base">03</p>
+              <p className="text-red-500 font-semibold text-lg">Nimbus</p>
             </div>
             <div className="text-right  text-sm opacity-80 space-y-1">
               <p>Empowering Farmers, Enriching India</p>
@@ -112,8 +112,8 @@ const Work = () => {
           {/* Row 4 */}
           <div className="flex items-start justify-between">
             <div>
-              <p className="text-[#FF0000] font-semibold text-base">04</p>
-              <p className="text-[#FF0000] font-semibold text-lg">
+              <p className="text-red-500 font-semibold text-base">04</p>
+              <p className="text-red-500 font-semibold text-lg">
                 Portfolio'22
               </p>
             </div>

@@ -60,14 +60,14 @@ const About = () => {
       </div>
       <div className="w-full min-[30vh] md:flex lg:flex lg:gap-x-20 md:gap-x-10">
              <div className="mb-4">
-              <h1 className="underline decoration-2 text-xl mb-2">HONORS & AWARDS</h1>
+              <h1 className="underline decoration-2 text-xl mb-2 text-red-500">HONORS & AWARDS</h1>
               <p className="text-30 ">Google GEN AI Hackathon Top 5 (2024)</p>
               <p className="text-30 ">MNIT Web-A-Thon Runner up (2024)</p>
               <p className="text-30 ">Informatica for AI/GenAI Finalist (2025)</p>
              </div>
              <div className="lg:flex md:flex lg:gap-x-20 md:gap-x-10">
             <div >
-            <h1 className="underline decoration-2 text-xl mb-2">SKILLS</h1>
+            <h1 className="underline decoration-2 text-xl mb-2 text-red-500">SKILLS</h1>
               <p className="text-30 ">Figma</p>
               <p className="text-30 ">GSAP</p>
               <p className="text-30 ">C</p>
