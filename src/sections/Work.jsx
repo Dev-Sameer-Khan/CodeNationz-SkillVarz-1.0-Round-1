@@ -1,7 +1,7 @@
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import React, { useEffect, useRef } from "react";
-import Magnet from "../Components/Magnet";
+import Magnet from "../components/Magnet";
 
 gsap.registerPlugin(ScrollTrigger);
 
