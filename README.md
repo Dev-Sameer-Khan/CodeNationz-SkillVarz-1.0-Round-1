@@ -98,7 +98,7 @@ The portfolio is broken into the following animated, scroll-based sections:
 Frontend Developer | 3D Developer | Creative Coder  
 
 🔗 [GitHub](https://github.com/Dev-Sameer-Khan)  
-🔗 [LinkedIn](https://www.linkedin.com/in/sameer-khan-dev)
+🔗 [LinkedIn](https://www.linkedin.com/in/dev-sameer-khan/)
 
 **K Narayn Reddy**  
 Frontend Developer 
