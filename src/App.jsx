@@ -6,7 +6,7 @@ import About from "./sections/About";
 import Footer from "./components/Footer";
 import Loader from "./components/Loader";
 import CustomCursor from "./components/CustomCursor";
-import Navbar from "./Components/Navbar";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   const heroRef = useRef(null);
